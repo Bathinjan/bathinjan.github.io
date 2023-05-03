@@ -1,0 +1,217 @@
+body{
+    /*Zero out margins*/
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/progen88.png);
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh; /*100% of veiwport height*/
+    display: flex;
+    justify-content: center; /* Horizontal orientation */
+    align-items: center; /* Vertical orientation */
+}
+
+.convertButton {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    transform: translateX(40%);
+    background-color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: white;
+    padding: 10px 15px;
+
+}
+
+/* Class delineation: . + className */
+.analogueClock{
+    position: relative;
+    background-color: #444;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* Rounds rectangle box into a circle */
+    border: 5px solid darkgrey;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.7); /* Can change transparency using the alpha channel */
+}
+
+.digitalClock {
+    position: relative;
+    transform-origin: center;
+    transform: translateX(0%);
+    width: 104%;
+    background-color: #000;
+    top: 40px;
+    height: 150px;
+    border-radius: 1.5%;
+    border: 5px solid aqua;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.7);
+}
+
+.analogueNumbers div { /*Targets all numbers in the div*/
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+
+.digitalContainers div {
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: red;
+}
+
+.analogueNumbers .twelve {
+    top: 6px;
+    left: center; /*Places the top left corner in the center only*/
+    transform: translatex(500%);
+}
+
+
+.analogueNumbers .one {
+    top: 30px;
+    left: center; /*Places the top left corner in the center only*/
+    transform: translateX(1550%);
+}
+
+.analogueNumbers .two {
+    top: 90px;
+    left: center; /*Places the top left corner in the center only*/
+    transform: translate(1850%);
+}
+
+
+.analogueNumbers .three {
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.analogueNumbers .four {
+    bottom: 90px;
+    left: 17%;
+    transform: translateX(1500%);
+}
+
+.analogueNumbers .five {
+    bottom: 30px;
+    left: -14%;
+    transform: translate(1850%);
+}
+
+.analogueNumbers .six {
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.analogueNumbers .seven {
+    bottom: 15px;
+    left: 27%;
+    transform: translateY(-50%);
+}
+
+.analogueNumbers .eight {
+    bottom: 75px;
+    left: 9%;
+    transform: translateY(-50%);
+}
+
+.analogueNumbers .nine {
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.analogueNumbers .ten {
+    top: 90px;
+    left: 12%;
+    transform: translateX(-50%);
+}
+
+.analogueNumbers .eleven {
+    top: 29px;
+    left: 29%;
+    transform: translateX(-50%);
+}
+
+.arrows {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: darkslategrey;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    z-index: 1;
+}
+
+.arrows div {
+    background-color: white;
+    width: 7px;
+    position: absolute;
+    transform-origin: bottom center; /* All objects within class will move from the bottom center position */
+    bottom: 50%;
+    /*In case of any watch face details, the z position of the arrows should be 0 to stack them */
+    z-index: 0;
+    border-radius: 50% 50% 0% 0%; /* creating a taper effect on the line being drawn */
+    box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+
+.arrows .hourHand {
+    height: 80px;
+    transform: rotate(30deg);
+    background-color: cornflowerblue;
+}
+
+.arrows .minuteHand {
+    height: 100px;
+    transform: rotate(250deg);
+    background-color: aquamarine;
+}
+
+.arrows .secondHand {
+    height: 120px;
+    width: 4px;
+    transform: rotate(0deg);
+    background-color: rgb(181, 53, 212);
+}
+
+.digitalContainers .digitalHour {
+    top: 30%;
+    left: 0px;
+}
+
+.digitalContainers .divider1 {
+    top: 30%;
+    left: 70px;
+}
+
+.digitalContainers .digitalMinute {
+    top: 30%;
+    left: 100px;
+}
+
+.digitalContainers .divider2 {
+    top: 30%;
+    left: 170px;
+}
+
+
+.digitalContainers .digitalSecond {
+    top: 30%;
+    left: 200px;
+}
+
+.digitalContainers .digitalMeridiem {
+    top: 30%;
+    left: 285px;
+}
