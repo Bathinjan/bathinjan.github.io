@@ -2,7 +2,7 @@ body{
     /*Zero out margins*/
     margin: 0;
     padding: 0;
-    background-image: url(../images/progen88.png);
+    background-image: url(./images/progen88.png);
     font-family: 'Courier New', Courier, monospace;
     height: 100vh; /*100% of veiwport height*/
     display: flex;
