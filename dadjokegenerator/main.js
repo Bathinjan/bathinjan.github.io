@@ -43,7 +43,7 @@ async function getDadJoke() {
     } 
     
     else {
-        return "Here's where I'd put my dad joke. IF I HAD ONE! (Error retreiving joke)"
+        return "Here's where I'd put my dad joke. IF I HAD ONE! ˙ ͜ʟ˙ (Error retreiving joke)"
     }
 };
 
