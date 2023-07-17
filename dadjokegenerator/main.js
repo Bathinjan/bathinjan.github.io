@@ -43,6 +43,7 @@ async function getDadJoke() {
     } 
     
     else {
+        jokeButton.textContent = "You spelled 'Retrieving' wrong, dipshit.";
         return "Here's where I'd put my dad joke. IF I HAD ONE! ˙ ͜ʟ˙ (Error retreiving joke)"
     }
 };
