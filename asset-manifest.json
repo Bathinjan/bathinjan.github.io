@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/localstorage-example/static/css/main.85bb7cb7.css",
-    "main.js": "/localstorage-example/static/js/main.7eb16780.js",
-    "index.html": "/localstorage-example/index.html",
-    "main.85bb7cb7.css.map": "/localstorage-example/static/css/main.85bb7cb7.css.map",
-    "main.7eb16780.js.map": "/localstorage-example/static/js/main.7eb16780.js.map"
+    "main.css": "/bathinjan.github.io/localstorage-example/static/css/main.85bb7cb7.css",
+    "main.js": "/bathinjan.github.io/localstorage-example/static/js/main.7eb16780.js",
+    "index.html": "/bathinjan.github.io/localstorage-example/index.html",
+    "main.85bb7cb7.css.map": "/bathinjan.github.io/localstorage-example/static/css/main.85bb7cb7.css.map",
+    "main.7eb16780.js.map": "/bathinjan.github.io/localstorage-example/static/js/main.7eb16780.js.map"
   },
   "entrypoints": [
     "static/css/main.85bb7cb7.css",
